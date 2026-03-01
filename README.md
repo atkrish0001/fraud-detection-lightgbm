@@ -71,14 +71,6 @@ The Streamlit dashboard allows users to:
 
 ---
 
-# 📸 Dashboard Preview
-
-![Dashboard](dashboard.png)
-
----
-
----
-
 # 🚀 Future Improvements
 
 - Real-time fraud monitoring
