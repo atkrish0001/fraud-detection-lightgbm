@@ -91,39 +91,6 @@ The Streamlit dashboard allows users to:
 
 ---
 
-# 📂 Project Structure
-fraud-detection-lightgbm
-│
-├── app
-│ └── app.py
-│
-├── models
-│ └── fraud_lightgbm_model.pkl
-│
-├── notebooks
-│ └── fraud_detection_analysis.ipynb
-│
-├── data
-│ └── sample_transactions.csv
-│
-├── images
-│ └── dashboard.png
-│
-├── requirements.txt
-└── README.md
-
----
-
-# 🛠️ Technologies Used
-
-- Python
-- LightGBM
-- Scikit-learn
-- Streamlit
-- Plotly
-- Pandas
-- NumPy
-
 ---
 
 # 🚀 Future Improvements
