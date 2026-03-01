@@ -19,31 +19,17 @@ The system includes:
 - Interactive fraud detection dashboard
 
 ---
+## 🧠 System Architecture
 
-# 🧠 Machine Learning Pipeline
-Dataset
-│
-▼
-Exploratory Data Analysis
-│
-▼
-Feature Engineering
-│
-▼
-Baseline Model (Logistic Regression)
-│
-▼
-LightGBM Model Training
-│
-▼
-Cross Validation
-│
-▼
-Threshold Optimization
-│
-▼
-Streamlit Fraud Detection Dashboard
-
+User Input (Streamlit Dashboard)  
+⬇  
+Feature Processing  
+⬇  
+LightGBM Fraud Detection Model  
+⬇  
+Fraud Probability Score  
+⬇  
+Fraud Risk Visualization
 
 ---
 
@@ -87,7 +73,7 @@ The Streamlit dashboard allows users to:
 
 # 📸 Dashboard Preview
 
-![Dashboard](images/dashboard.png)
+![Dashboard](dashboard.png)
 
 ---
 
