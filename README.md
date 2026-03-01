@@ -1,40 +1,53 @@
 # 💳 AI Fraud Detection System
 
-An end-to-end machine learning project that detects fraudulent financial transactions using a LightGBM model and provides an interactive Streamlit dashboard for real-time predictions.
+An end-to-end machine learning project that detects fraudulent financial transactions using a LightGBM model and provides an interactive Streamlit dashboard for real-time fraud prediction.
 
 ---
 
-## 📌 Project Overview
+# 📌 Project Overview
 
-Financial fraud is a major challenge in digital payment systems.  
-This project builds a machine learning model capable of identifying suspicious transactions based on transaction patterns and account balance behavior.
+Financial fraud is a major issue in digital payment systems. Fraudulent transactions cause billions of dollars in losses globally each year.
+
+This project builds a machine learning system capable of detecting suspicious financial transactions based on transaction patterns and account balance changes.
 
 The system includes:
 
-• Exploratory Data Analysis  
-• Feature Engineering  
-• Machine Learning Model Training  
-• Model Evaluation  
-• Fraud Detection Dashboard (Streamlit)
+- Data exploration and visualization
+- Feature engineering
+- Machine learning model training
+- Model evaluation
+- Interactive fraud detection dashboard
 
 ---
 
-## 🧠 Machine Learning Pipeline
+# 🧠 Machine Learning Pipeline
+Dataset
+│
+▼
+Exploratory Data Analysis
+│
+▼
+Feature Engineering
+│
+▼
+Baseline Model (Logistic Regression)
+│
+▼
+LightGBM Model Training
+│
+▼
+Cross Validation
+│
+▼
+Threshold Optimization
+│
+▼
+Streamlit Fraud Detection Dashboard
 
-The project follows a typical production ML workflow:
-
-1. Data Cleaning
-2. Exploratory Data Analysis
-3. Feature Engineering
-4. Logistic Regression Baseline Model
-5. LightGBM Model Training
-6. Cross-Validation
-7. Threshold Optimization
-8. Model Deployment with Streamlit
 
 ---
 
-## 📊 Model Performance
+# 📊 Model Performance
 
 | Metric | Score |
 |------|------|
@@ -43,31 +56,82 @@ The project follows a typical production ML workflow:
 | Precision | 0.95 |
 | Recall | 0.78 |
 
-The LightGBM model significantly improves fraud detection performance compared to the baseline logistic regression model.
+The LightGBM model significantly improves performance compared to the baseline logistic regression model.
 
 ---
 
-## 📈 Key Fraud Indicators
+# 📈 Key Fraud Indicators
 
-Important features that helped detect fraudulent transactions:
+Important features identified by the model:
 
-• Transaction amount  
-• Sender account balance before transaction  
-• Balance difference after transaction  
-• Destination account balance changes  
-• Transaction type (TRANSFER / CASH_OUT)
+- Transaction Amount
+- Sender Balance Before Transaction
+- Balance Difference After Transaction
+- Receiver Balance Change
+- Transaction Type (TRANSFER / CASH_OUT)
 
-These patterns match common fraud behaviors observed in financial systems.
+These features reflect common fraud patterns observed in financial systems.
 
 ---
 
-## 🖥️ Fraud Detection Dashboard
+# 🖥️ Fraud Detection Dashboard
 
-An interactive dashboard built using Streamlit allows users to:
+The Streamlit dashboard allows users to:
 
-• Enter transaction details  
-• Predict fraud probability  
-• Visualize fraud risk  
-• Upload CSV files for batch fraud detection  
+- Enter transaction details
+- Predict fraud probability
+- Visualize fraud risk using a gauge chart
+- Upload CSV files for batch fraud detection
+
+---
+
+# 📸 Dashboard Preview
+
+![Dashboard](images/dashboard.png)
+
+---
+
+# 📂 Project Structure
+fraud-detection-lightgbm
+│
+├── app
+│ └── app.py
+│
+├── models
+│ └── fraud_lightgbm_model.pkl
+│
+├── notebooks
+│ └── fraud_detection_analysis.ipynb
+│
+├── data
+│ └── sample_transactions.csv
+│
+├── images
+│ └── dashboard.png
+│
+├── requirements.txt
+└── README.md
+
+---
+
+# 🛠️ Technologies Used
+
+- Python
+- LightGBM
+- Scikit-learn
+- Streamlit
+- Plotly
+- Pandas
+- NumPy
+
+---
+
+# 🚀 Future Improvements
+
+- Real-time fraud monitoring
+- Advanced feature engineering
+- Hyperparameter tuning
+- Cloud deployment
+- Model explainability (SHAP)
 
 ---
